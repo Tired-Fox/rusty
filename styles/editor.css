@@ -1,0 +1,61 @@
+@import "globals";
+
+.hide-editor {
+    display: none !important;
+}
+
+.editor {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    
+    gap: .35rem;
+
+    line-height: .8rem;
+    padding: 1rem;
+    
+    background-color: #24273a;
+    overflow: auto;
+
+    color: var(--Text);
+    font-size: var(--font-size);
+}
+
+.editor>div:nth-child(2) {
+    width: 100%;
+}
+
+.editor>div {
+    
+    padding: .5rem;
+}
+
+.editor-line {
+    width: 100%;
+    height: fit-content;
+    padding-block: .2em;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    letter-spacing: .1rem;
+
+    /* border: 1px dotted blue; */
+}
+
+.editor-gutter {
+    /* border: 1px dashed green; */
+    width: fit-content;
+    padding-block: .2em;
+    padding-inline: .2em;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: .1rem;
+    align-items: center;
+}
+
+.editor-line-number {}
+.editor-line-text {}
+
+.red {
+    color: var(--Red)
+}

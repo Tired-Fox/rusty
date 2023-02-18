@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="layout.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <div class="window font">
+            <!-- gutter                                    | text -->
+            <!-- icon : breakpoint : git lens | above\n before : text : after \n below -->
+            <div class="line" id="line-1">
+                <div class="gutter">
+
+                    <!-- Unicode/SVG icon -->
+                    <div class="gutter-icon error-warning">⚠</div>
+
+                    <!-- Red circle : ● or ◯ -->
+                    <div class="gutter-breakpoint breakpoint">●</div>
+
+                    <!-- Top : Full : Bottom : whole -->
+                    <div class="gutter-gitlens gutter-gitlens-whole git-changed"></div>
+                </div>
+
+                <div class="text">
+                    <div class="text-above hint">@contract(null -> String)</div>
+                    <div class="text-inline">
+                        <div class="text-before hint">before</div>
+                        <span class="text-content">text</span>
+                        <div class="text-after hint">after</div>                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

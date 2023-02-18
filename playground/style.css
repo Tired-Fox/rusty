@@ -1,0 +1,28 @@
+@font-face {
+    font-family: "Fira Code";
+    src: local("Fira Code")
+}
+
+.font {
+    font-family: "Fira Code";
+}
+
+.git-changed::after {
+    background-color: orange;
+}
+
+.error-warning {
+    color: orange;
+}
+
+.breakpoint {
+    color: rgb(216, 15, 15);
+}
+
+.hint {
+    color: rgba(128, 128, 128, 0.534);
+}
+
+.text-above.hint {
+    font-size: 14px;
+}
