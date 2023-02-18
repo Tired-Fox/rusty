@@ -18,24 +18,71 @@
                 <div class="gutter">
 
                     <!-- Unicode/SVG icon -->
-                    <div class="gutter-icon error-warning">⚠</div>
 
                     <!-- Red circle : ● or ◯ -->
-                    <div class="gutter-breakpoint breakpoint">●</div>
+                    <div class="gutter-breakpoint breakpoint mt-line"></div>
+
+                    <div class="gutter-linenumber"><br/>1</div>
 
                     <!-- Top : Full : Bottom : whole -->
-                    <div class="gutter-gitlens gutter-gitlens-whole git-changed"></div>
+                    <div class="gutter-gitlens gutter-gitlens-bottom git-changed"><div></div></div>
+                    <div class="gutter-quickfix"></div>
                 </div>
 
                 <div class="text">
-                    <div class="text-above hint">@contract(null -> String)</div>
+                    <div class="text-above hint">@contract(null->String)</div>
                     <div class="text-inline">
-                        <div class="text-before hint">before</div>
-                        <span class="text-content">text</span>
-                        <div class="text-after hint">after</div>                      
+                        <pre class="text-content"><span>func print() -> String</span> {</pre>
+                        <div class="text-after error-warning">Function 'print' must return a String</div>                      
                     </div>
                 </div>
             </div>
+            <div class="line" id="line-2">
+                <div class="gutter">
+
+                    <!-- Unicode/SVG icon -->
+
+                    <!-- Red circle : ● or ◯ -->
+                    <div class="gutter-breakpoint breakpoint" active></div>
+
+                    <div class="gutter-linenumber">2</div>
+
+                    <!-- Top : Full : Bottom : whole -->
+                    <div class="gutter-gitlens gutter-gitlens-full git-changed"><div></div></div>
+                    <div class="gutter-collapse">💡</div>
+                </div>
+
+                <div class="text">
+                    <!-- <div class="text-above hint">@contract(null->String)</div> -->
+                    <div class="text-inline">
+                        <pre class="text-content"><span>    <span style="color: cyan">let</span> data</span><span class="hint">: &str</span> = <span style="color: rgb(0, 172, 0); text-decoration: underline red wavy 1px">"Some Data"</span></pre>
+                        <div class="text-after error-invalid">Missing a semicolon</div>                      
+                    </div>
+                </div>
+                <!-- aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa -->
+            </div>
+            <div class="line" id="line-3">
+                <div class="gutter">
+
+                    <!-- Unicode/SVG icon -->
+
+                    <!-- Red circle : ● or ◯ -->
+                    <div class="gutter-breakpoint breakpoint"></div>
+
+                    <div class="gutter-linenumber">3</div>
+
+                    <!-- Top : Full : Bottom : whole -->
+                    <div class="gutter-gitlens gutter-gitlens-top git-changed"><div></div></div>
+                    <div class="gutter-collapse"></div>
+                </div>
+
+                <div class="text">
+                    <div class="text-inline">
+                        <pre class="text-content">}</pre>
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </body>
 </html>

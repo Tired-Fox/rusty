@@ -2,15 +2,14 @@ import Head from "next/head";
 import { useEffect } from "react";
 import { Inter, Source_Code_Pro } from "@next/font/google";
 
-import { EditorLine } from "../components/EditorLine";
-
 import { execBinding } from "../javascript/keybindings";
-import styles from "../styles/Blank.module.css";
 import { Editor } from "../components/Editor";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+
+  //? Add listeners for keyboard input
   useEffect(() => {
     document.addEventListener("keydown", execBinding);
 
@@ -18,6 +17,10 @@ export default function Home() {
       document.removeEventListener("keydown", execBinding);
     };
   });
+
+  const editorText = `func print() -> String {
+    let data: &str = "Some Data";
+}`;
 
   return (
     <>
@@ -27,22 +30,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
-        <h1 className={styles.title}>RUSTY</h1>
-        <div className="editor" id="editor">
-            <Editor text="Hello World\nprint('hello world!')" />
-            {/* <div className="editor-gutter">
-                 <div className="editor-line-gutter">
-                    <div className="editor-line-gutter-symbol">⬤</div>
-                    <div className="editor-line-number">1</div>
-                </div>
-            </div>
-            <div className="editor-text" contentEditable="true" spellCheck="false">
-                <EditorLine lineNumber={1} text="First line" gutter="⚠" />
-                <EditorLine lineNumber={2} text="print('hello world!')" gutter="⬤" />
-            </div> */}
-        </div>
-      </main>
+      <div className="editor" id="editor">
+        <Editor text={editorText} />
+      </div>
     </>
   );
 }

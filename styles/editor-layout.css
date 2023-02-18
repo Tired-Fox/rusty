@@ -1,9 +1,3 @@
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
 br {
     content: "";
     display: block;
@@ -81,7 +75,7 @@ w-100 {
 }
 
 .gutter-gitlens:hover>div {
-    width: 100%;
+    width: 80%;
 }
 
 .gutter-collapse {

@@ -3,12 +3,12 @@
     src: local("Fira Code")
 }
 
-.gutter-breakpoint:hover:not([active])::after {
+.gutter-breakpoint:hover:not([data-active=true])::after {
     content: "●";
     opacity: .5;
 }
 
-.gutter-breakpoint[active]::after {
+.gutter-breakpoint[data-active=true]::after {
     content: "●";
 }
 
@@ -21,7 +21,7 @@ body {
     color: white;
 }
 
-.git-changed>div {
+.gitlense-changed>div {
     background-color: orange;
 }
 

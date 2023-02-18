@@ -64,24 +64,6 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-size: var(--font-size);
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background-color: var(--Mantle);
-  color: var(--Surface0)
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
 }
 
 @media (prefers-color-scheme: dark) {
